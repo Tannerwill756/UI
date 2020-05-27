@@ -128,6 +128,7 @@ table {
 }
 * {
   box-sizing: border-box;
+  max-width: 100%;
 }
 html {
   font-size: 62.5%;
@@ -194,7 +195,7 @@ header nav a {
 }
 .failure-section {
   display: flex;
-  padding: 5%;
+  padding: 7.5%;
 }
 .failure-section .failure-img {
   text-align: center;
@@ -205,22 +206,36 @@ header nav a {
 }
 .failure-section .failure-content h3,
 .failure-section .failure-content p {
-  padding: 1% 0;
+  padding: 2.5% 7.5%;
 }
-.success {
+.success-section {
   background-color: #f9f9fa;
   display: flex;
-  padding: 5%;
+  padding: 7.5%;
 }
-.success .success-img {
+.success-section .success-img {
   order: 2;
   text-align: center;
   width: 50%;
 }
-.success .success-content {
+.success-section .success-content {
   width: 50%;
 }
-.success .success-content h3,
-.success .success-content p {
-  padding: 1% 0;
+.success-section .success-content h3,
+.success-section .success-content p {
+  padding: 2.5% 7.5%;
+}
+.how-it-works {
+  display: flex;
+  padding: 7.5%;
+}
+.how-it-works .box {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5%;
+}
+.how-it-works .box img,
+.how-it-works .box h3,
+.how-it-works .box p {
+  padding: 2.5% 0;
 }
