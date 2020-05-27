@@ -167,6 +167,17 @@ header {
     padding: 5% 10%;
   }
 }
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  header .logo {
+    margin: 4% 0;
+  }
+}
 header nav {
   display: flex;
   justify-content: space-around;
@@ -175,6 +186,12 @@ header nav {
 @media (max-width: 800px) {
   header nav {
     width: 30%;
+  }
+}
+@media (max-width: 500px) {
+  header nav {
+    margin: 4% 0;
+    width: 50%;
   }
 }
 header nav a {
@@ -208,6 +225,11 @@ footer nav {
     width: 30%;
   }
 }
+@media (max-width: 500px) {
+  footer nav {
+    width: 50%;
+  }
+}
 footer nav a {
   color: black;
 }
@@ -238,6 +260,11 @@ footer nav a {
     margin: 1.5% 0;
   }
 }
+@media (max-width: 500px) {
+  .main-section h1 {
+    margin: 3% 0;
+  }
+}
 .main-section h2 {
   margin: 1% 0;
 }
@@ -245,6 +272,11 @@ footer nav a {
   .main-section h2 {
     font-size: 3.2rem;
     margin: 1.5% 0;
+  }
+}
+@media (max-width: 500px) {
+  .main-section h2 {
+    margin: 3% 0;
   }
 }
 .main-section a {
@@ -260,9 +292,27 @@ footer nav a {
     margin: 2% 0;
   }
 }
+@media (max-width: 500px) {
+  .main-section a {
+    padding: 3% 5%;
+    margin: 3% 0;
+  }
+}
 .failure-section {
   display: flex;
   padding: 5%;
+}
+@media (max-width: 800px) {
+  .failure-section {
+    padding: 7.5% 5%;
+  }
+}
+@media (max-width: 500px) {
+  .failure-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 2.5%;
+  }
 }
 .failure-section .failure-img {
   display: flex;
@@ -271,9 +321,19 @@ footer nav a {
   margin: 0 1.25%;
   width: 50%;
 }
+@media (max-width: 500px) {
+  .failure-section .failure-img {
+    width: 75%;
+  }
+}
 .failure-section .failure-content {
   margin: 0 1.25%;
   width: 50%;
+}
+@media (max-width: 500px) {
+  .failure-section .failure-content {
+    width: 75%;
+  }
 }
 .failure-section .failure-content h3 {
   padding: 2.5% 3.75%;
@@ -283,13 +343,37 @@ footer nav a {
     font-size: 2.4rem;
   }
 }
+@media (max-width: 500px) {
+  .failure-section .failure-content h3 {
+    padding: 0;
+    margin: 7.5% 0;
+    text-align: center;
+  }
+}
 .failure-section .failure-content p {
   padding: 2.5% 3.75%;
+}
+@media (max-width: 500px) {
+  .failure-section .failure-content p {
+    padding: 0;
+  }
 }
 .success-section {
   background-color: #f9f9fa;
   display: flex;
   padding: 5%;
+}
+@media (max-width: 800px) {
+  .success-section {
+    padding: 7.5% 5%;
+  }
+}
+@media (max-width: 500px) {
+  .success-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 2.5%;
+  }
 }
 .success-section .success-img {
   display: flex;
@@ -299,9 +383,20 @@ footer nav a {
   margin: 0 1.25%;
   width: 50%;
 }
+@media (max-width: 500px) {
+  .success-section .success-img {
+    width: 75%;
+  }
+}
 .success-section .success-content {
   margin: 0 1.25%;
   width: 50%;
+}
+@media (max-width: 500px) {
+  .success-section .success-content {
+    order: 2;
+    width: 75%;
+  }
 }
 .success-section .success-content h3 {
   padding: 2.5% 7.5%;
@@ -311,8 +406,20 @@ footer nav a {
     font-size: 2.4rem;
   }
 }
+@media (max-width: 500px) {
+  .success-section .success-content h3 {
+    padding: 0;
+    margin: 7.5% 0;
+    text-align: center;
+  }
+}
 .success-section .success-content p {
   padding: 2.5% 7.5%;
+}
+@media (max-width: 500px) {
+  .success-section .success-content p {
+    padding: 0;
+  }
 }
 .how-it-works-section {
   display: flex;
@@ -344,6 +451,13 @@ footer nav a {
     font-size: 2.4rem;
   }
 }
+@media (max-width: 500px) {
+  .how-it-works-section .box h3 {
+    padding: 0;
+    margin: 5% 0;
+    text-align: center;
+  }
+}
 .sign-up-section {
   background-color: #f9f9fa;
   display: flex;
@@ -357,6 +471,11 @@ footer nav a {
     font-size: 3.2rem;
   }
 }
+@media (max-width: 500px) {
+  .sign-up-section h2 {
+    margin: 3% 0;
+  }
+}
 .sign-up-section a {
   background-color: black;
   color: white;
@@ -368,6 +487,12 @@ footer nav a {
     font-size: 1.872rem;
     padding: 2% 4%;
     margin: 3.5% 0;
+  }
+}
+@media (max-width: 500px) {
+  .sign-up-section a {
+    padding: 3% 5%;
+    margin: 3% 0;
   }
 }
 .intro-section {

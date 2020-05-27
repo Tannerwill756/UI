@@ -17,6 +17,9 @@
       font-size: @biggest-size;
       margin: 1.5% 0;
     }
+    @media @mobile {
+      margin: 3% 0;
+    }
   }
 
   h2 {
@@ -24,6 +27,9 @@
     @media @tablet {
       font-size: @h1-size;
       margin: 1.5% 0;
+    }
+    @media @mobile {
+      margin: 3% 0;
     }
   }
 
@@ -37,12 +43,24 @@
       padding: 2% 4%;
       margin: 2% 0;
     }
+    @media @mobile {
+      padding: 3% 5%;
+      margin: 3% 0;
+    }
   }
 }
 
 .failure-section {
   display: flex;
   padding: 5%;
+  @media @tablet {
+    padding: 7.5% 5%;
+  }
+  @media @mobile {
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 2.5%;
+  }
 
   .failure-img {
     display: flex;
@@ -50,21 +68,35 @@
     justify-content: center;
     margin: 0 1.25%;
     width: 50%;
+    @media @mobile {
+      width: 75%;
+    }
   }
 
   .failure-content {
     margin: 0 1.25%;
     width: 50%;
+    @media @mobile {
+      width: 75%;
+    }
 
     h3 {
       padding: 2.5% 3.75%;
       @media @tablet {
         font-size: @h2-size;
       }
+      @media @mobile {
+        padding: 0;
+        margin: 7.5% 0;
+        text-align: center;
+      }
     }
 
     p {
       padding: 2.5% 3.75%;
+      @media @mobile {
+        padding: 0;
+      }
     }
   }
 }
@@ -73,6 +105,14 @@
   background-color: #f9f9fa;
   display: flex;
   padding: 5%;
+  @media @tablet {
+    padding: 7.5% 5%;
+  }
+  @media @mobile {
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 2.5%;
+  }
 
   .success-img {
     display: flex;
@@ -81,21 +121,36 @@
     order: 2;
     margin: 0 1.25%;
     width: 50%;
+    @media @mobile {
+      width: 75%;
+    }
   }
 
   .success-content {
     margin: 0 1.25%;
     width: 50%;
+    @media @mobile {
+      order: 2;
+      width: 75%;
+    }
 
     h3 {
       padding: 2.5% 7.5%;
       @media @tablet {
         font-size: @h2-size;
       }
+      @media @mobile {
+        padding: 0;
+        margin: 7.5% 0;
+        text-align: center;
+      }
     }
 
     p {
       padding: 2.5% 7.5%;
+      @media @mobile {
+        padding: 0;
+      }
     }
   }
 }
@@ -126,6 +181,11 @@
       @media @tablet {
         font-size: @h2-size;
       }
+      @media @mobile {
+        padding: 0;
+        margin: 5% 0;
+        text-align: center;
+      }
     }
   }
 }
@@ -142,6 +202,9 @@
     @media @tablet {
       font-size: @h1-size;
     }
+    @media @mobile {
+      margin: 3% 0;
+    }
   }
 
   a {
@@ -153,6 +216,10 @@
       font-size: @h3-size;
       padding: 2% 4%;
       margin: 3.5% 0;
+    }
+    @media @mobile {
+      padding: 3% 5%;
+      margin: 3% 0;
     }
   }
 }
