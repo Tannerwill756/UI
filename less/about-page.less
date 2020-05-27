@@ -3,6 +3,9 @@
   @media @tablet {
     padding: 5% 15%;
   }
+  @media @mobile {
+    padding: 10% 7.5%;
+  }
 }
 
 .team-section {
@@ -21,11 +24,24 @@
     @media @tablet {
       margin: 7.5% 0;
     }
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .box {
+      @media @mobile {
+        margin: 7.5% 0%;
+      }
+    }
 
     h3 {
       margin: 5% 0;
       @media @tablet {
         font-size: @h2-size;
+      }
+      @media @tablet {
+        margin: auto;
       }
     }
 
@@ -34,6 +50,9 @@
       padding: 10%;
       @media @tablet {
         padding: 7.5% 5%;
+      }
+      @media @mobile {
+        padding: 5%;
       }
     }
   }
