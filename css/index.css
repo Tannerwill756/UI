@@ -373,20 +373,44 @@ footer nav a {
 .intro-section {
   padding: 5% 25%;
 }
+@media (max-width: 800px) {
+  .intro-section {
+    padding: 5% 15%;
+  }
+}
 .team-section {
   padding: 5% 7.5%;
   text-align: center;
+}
+@media (max-width: 800px) {
+  .team-section h1 {
+    font-size: 4rem;
+  }
 }
 .team-section .team-members {
   display: flex;
   margin: 5% 0;
 }
+@media (max-width: 800px) {
+  .team-section .team-members {
+    margin: 7.5% 0;
+  }
+}
 .team-section .team-members h3 {
   margin: 5% 0;
 }
-.team-section .team-members img {
-  padding: 10%;
+@media (max-width: 800px) {
+  .team-section .team-members h3 {
+    font-size: 2.4rem;
+  }
 }
+.team-section .team-members img,
 .team-section .team-members p {
   padding: 10%;
+}
+@media (max-width: 800px) {
+  .team-section .team-members img,
+  .team-section .team-members p {
+    padding: 7.5% 5%;
+  }
 }

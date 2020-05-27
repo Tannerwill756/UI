@@ -1,21 +1,40 @@
 .intro-section {
   padding: 5% 25%;
+  @media @tablet {
+    padding: 5% 15%;
+  }
 }
 
 .team-section {
   padding: 5% 7.5%;
   text-align: center;
+
+  h1 {
+    @media @tablet {
+      font-size: @biggest-size;
+    }
+  }
+
   .team-members {
     display: flex;
     margin: 5% 0;
+    @media @tablet {
+      margin: 7.5% 0;
+    }
+
     h3 {
       margin: 5% 0;
+      @media @tablet {
+        font-size: @h2-size;
+      }
     }
-    img {
-      padding: 10%;
-    }
+
+    img,
     p {
       padding: 10%;
+      @media @tablet {
+        padding: 7.5% 5%;
+      }
     }
   }
 }
