@@ -2,12 +2,21 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 2.5% 10%;
+  @media @tablet {
+    padding: 5% 10%;
+  }
   nav {
     display: flex;
     justify-content: space-around;
     width: 20%;
+    @media @tablet {
+      width: 30%;
+    }
     a {
       color: black;
+      @media @tablet {
+        font-size: @h3-size;
+      }
     }
   }
 }

@@ -11,8 +11,20 @@
   color: white;
   font-weight: bold;
 
-  h1, h2 {
+  h1 {
     margin: 1% 0;
+    @media @tablet {
+      font-size: @biggest-size;
+      margin: 1.5% 0;
+    }
+  }
+
+  h2 {
+    margin: 1% 0;
+    @media @tablet {
+      font-size: @h1-size;
+      margin: 1.5% 0;
+    }
   }
 
   a {
@@ -20,23 +32,39 @@
     color: black;
     margin: 1% 0;
     padding: 1% 3%;
+    @media @tablet {
+      font-size: @h3-size;
+      padding: 2% 4%;
+      margin: 2% 0;
+    }
   }
 }
 
 .failure-section {
   display: flex;
-  padding: 7.5%;
+  padding: 5%;
 
   .failure-img {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 1.25%;
     width: 50%;
   }
 
   .failure-content {
+    margin: 0 1.25%;
     width: 50%;
 
-    h3, p {
-      padding: 2.5% 7.5%;
+    h3 {
+      padding: 2.5% 3.75%;
+      @media @tablet {
+        font-size: @h2-size;
+      }
+    }
+
+    p {
+      padding: 2.5% 3.75%;
     }
   }
 }
@@ -44,18 +72,28 @@
 .success-section {
   background-color: #f9f9fa;
   display: flex;
-  padding: 7.5%;
+  padding: 5%;
 
   .success-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     order: 2;
-    text-align: center;
+    margin: 0 1.25%;
     width: 50%;
   }
 
   .success-content {
+    margin: 0 1.25%;
     width: 50%;
 
-    h3,
+    h3 {
+      padding: 2.5% 7.5%;
+      @media @tablet {
+        font-size: @h2-size;
+      }
+    }
+
     p {
       padding: 2.5% 7.5%;
     }
@@ -65,14 +103,29 @@
 .how-it-works-section {
   display: flex;
   padding: 7.5%;
+  @media @tablet {
+    flex-direction: column;
+    padding: 7.5% 15%;
+  }
 
   .box {
     display: flex;
     flex-direction: column;
     margin: 0 5%;
+    @media @tablet {
+      margin: 5% 0;
+    }
 
-    h3, img, p {
+    h3,
+    img,
+    p {
       padding: 2.5% 0;
+    }
+
+    h3 {
+      @media @tablet {
+        font-size: @h2-size;
+      }
     }
   }
 }
@@ -85,10 +138,21 @@
   padding: 7.5%;
   font-weight: bold;
 
+  h2 {
+    @media @tablet {
+      font-size: @h1-size;
+    }
+  }
+
   a {
     background-color: black;
     color: white;
     padding: 1% 3%;
     margin: 2.5% 0;
+    @media @tablet {
+      font-size: @h3-size;
+      padding: 2% 4%;
+      margin: 3.5% 0;
+    }
   }
 }
