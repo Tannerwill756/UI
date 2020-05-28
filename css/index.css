@@ -548,6 +548,7 @@ footer p {
   padding: 7.5%;
 }
 .sign-up-section h2 {
+  color: #676E7A;
   font-size: 3.2rem;
 }
 @media (max-width: 800px) {
