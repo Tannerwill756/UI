@@ -1,14 +1,13 @@
 footer {
-  border-top: 1px solid black;
-  display: flex;
-  flex-direction: column;
+  background-color: @secondary-gray;
+  .flex-column();
   align-items: center;
   padding: 2.5% 10%;
   @media @tablet {
     padding: 5% 10%;
   }
   nav {
-    display: flex;
+    .flex-row();
     justify-content: space-around;
     margin: 5% 0;
     width: 20%;
@@ -20,10 +19,18 @@ footer {
       width: 50%;
     }
     a {
-      color: black;
+      color: white;
+      font-size: @h2-size;
       @media @tablet {
         font-size: @h3-size;
       }
+      &:hover {
+        text-decoration: underline;
+      }
     }
+  }
+
+  p {
+    color: white;
   }
 }

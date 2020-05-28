@@ -1,41 +1,51 @@
+//=== Main Section starts ===//
 .main-section {
   background-image: url("../img/community.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 80vh;
-  display: flex;
-  flex-direction: column;
+  .flex-column();
   align-items: center;
   justify-content: center;
-  color: white;
-  font-weight: bold;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 150, 0.3);
 
   h1 {
+    color: white;
+    font-size: @biggest-size;
     margin: 1% 0;
     @media @tablet {
       font-size: @biggest-size;
       margin: 1.5% 0;
     }
     @media @mobile {
+      padding: 0 5%;
       margin: 3% 0;
+      text-align: center;
     }
   }
 
   h2 {
+    color: white;
+    font-size: @h1-size;
     margin: 1% 0;
     @media @tablet {
       font-size: @h1-size;
       margin: 1.5% 0;
     }
     @media @mobile {
+      padding: 0 5%;
       margin: 3% 0;
+      text-align: center;
     }
   }
 
   a {
-    background-color: white;
-    color: black;
+    background-color: @primary-green;
+    border: 1px solid @primary-green;
+    border-radius: 3px;
+    color: white;
+    font-size: @h2-size;
     margin: 1% 0;
     padding: 1% 3%;
     @media @tablet {
@@ -47,33 +57,41 @@
       padding: 3% 5%;
       margin: 3% 0;
     }
+    &:hover {
+      background-color: @secondary-green;
+      color: white;
+    }
   }
 }
+//=== Main Section starts ===//
 
+//=== Failure Section starts ===//
 .failure-section {
-  display: flex;
+  .flex-row();
+  justify-content: space-around;
   padding: 5%;
   @media @tablet {
     padding: 7.5% 5%;
   }
   @media @mobile {
-    flex-direction: column;
+    .flex-column();
     align-items: center;
     padding: 10% 2.5%;
   }
 
   .failure-img {
-    display: flex;
-    flex-direction: column;
+    .flex-column();
     justify-content: center;
     margin: 0 1.25%;
-    width: 50%;
+    width: 40%;
     @media @mobile {
       width: 75%;
     }
   }
 
   .failure-content {
+    .flex-column();
+    justify-content: center;
     margin: 0 1.25%;
     width: 50%;
     @media @mobile {
@@ -81,6 +99,8 @@
     }
 
     h3 {
+      color: @primary-gray;
+      font-size: @h2-size;
       padding: 2.5% 3.75%;
       @media @tablet {
         font-size: @h2-size;
@@ -93,6 +113,8 @@
     }
 
     p {
+      color: @primary-gray;
+      font-size: @h3-size;
       padding: 2.5% 3.75%;
       @media @mobile {
         padding: 0;
@@ -100,33 +122,37 @@
     }
   }
 }
+//=== Failure Section ends ===//
 
+//=== Success Section starts ===//
 .success-section {
   background-color: #f9f9fa;
-  display: flex;
+  .flex-row();
+  justify-content: space-around;
   padding: 5%;
   @media @tablet {
     padding: 7.5% 5%;
   }
   @media @mobile {
-    flex-direction: column;
+    .flex-column();
     align-items: center;
     padding: 10% 2.5%;
   }
 
   .success-img {
-    display: flex;
-    flex-direction: column;
+    .flex-column();
     justify-content: center;
     order: 2;
     margin: 0 1.25%;
-    width: 50%;
+    width: 40%;
     @media @mobile {
       width: 75%;
     }
   }
 
   .success-content {
+    .flex-column();
+    justify-content: center;
     margin: 0 1.25%;
     width: 50%;
     @media @mobile {
@@ -135,7 +161,9 @@
     }
 
     h3 {
-      padding: 2.5% 7.5%;
+      color: @primary-gray;
+      font-size: @h2-size;
+      padding: 2.5% 3.75%;
       @media @tablet {
         font-size: @h2-size;
       }
@@ -147,28 +175,37 @@
     }
 
     p {
-      padding: 2.5% 7.5%;
+      color: @primary-gray;
+      font-size: @h3-size;
+      padding: 2.5% 3.75%;
       @media @mobile {
         padding: 0;
       }
     }
   }
 }
+//=== Success Section ends ===//
 
+//=== How it works Section starts ===//
 .how-it-works-section {
-  display: flex;
-  padding: 7.5%;
+  .flex-row();
+  padding: 5%;
   @media @tablet {
-    flex-direction: column;
+    .flex-column();
+    align-items: center;
     padding: 7.5% 15%;
   }
 
   .box {
-    display: flex;
-    flex-direction: column;
-    margin: 0 5%;
+    .flex-column();
+    margin: 0 4%;
+    width: 30%;
     @media @tablet {
       margin: 5% 0;
+      width: 75%;
+    }
+    @media @mobile {
+      width: 100%;
     }
 
     h3,
@@ -178,6 +215,8 @@
     }
 
     h3 {
+      color: @primary-gray;
+      font-size: @h2-size;
       @media @tablet {
         font-size: @h2-size;
       }
@@ -187,29 +226,42 @@
         text-align: center;
       }
     }
+
+    p {
+      color: @primary-gray;
+      font-size: @h3-size;
+    }
   }
 }
+//=== How it works Section ends ===//
 
+//=== Sign up Section starts ===//
 .sign-up-section {
   background-color: #f9f9fa;
-  display: flex;
-  flex-direction: column;
+  .flex-column();
   align-items: center;
   padding: 7.5%;
-  font-weight: bold;
 
   h2 {
+    font-size: @h1-size;
     @media @tablet {
       font-size: @h1-size;
+      line-height: 1.5;
+      text-align: center;
+      padding: 0 15%;
     }
     @media @mobile {
+      padding: 0 5%;
       margin: 3% 0;
     }
   }
 
   a {
-    background-color: black;
+    background-color: @primary-green;
+    border: 1px solid @primary-green;
+    border-radius: 3px;
     color: white;
+    font-size: @h2-size;
     padding: 1% 3%;
     margin: 2.5% 0;
     @media @tablet {
@@ -221,5 +273,11 @@
       padding: 3% 5%;
       margin: 3% 0;
     }
+    &:hover {
+      background-color: @secondary-green;
+      border: 1px solid @secondary-green;
+      color: white;
+    }
   }
 }
+//=== Sign up Section starts ===//

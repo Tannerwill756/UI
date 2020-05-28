@@ -139,12 +139,15 @@ body {
 }
 h1 {
   font-size: 3.2rem;
+  letter-spacing: 1.2px;
 }
 h2 {
   font-size: 2.4rem;
+  letter-spacing: 1.2px;
 }
 h3 {
   font-size: 1.872rem;
+  letter-spacing: 1.2px;
 }
 h4 {
   font-size: 1.6rem;
@@ -154,14 +157,15 @@ p {
   font-size: 1.6rem;
 }
 a {
-  font-size: 1.6rem;
+  font-size: 1.872rem;
   text-decoration: none;
 }
 header {
   border-bottom: 1px solid black;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  padding: 2.5% 10%;
+  padding: 2% 10%;
 }
 @media (max-width: 800px) {
   header {
@@ -170,19 +174,31 @@ header {
 }
 @media (max-width: 500px) {
   header {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
+header .logo {
+  width: 10%;
+}
+@media (max-width: 800px) {
+  header .logo {
+    width: 15%;
+  }
+}
 @media (max-width: 500px) {
   header .logo {
+    width: 25%;
     margin: 4% 0;
   }
 }
 header nav {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
-  width: 20%;
+  align-items: center;
+  width: 30%;
 }
 @media (max-width: 800px) {
   header nav {
@@ -196,15 +212,19 @@ header nav {
   }
 }
 header nav a {
-  color: black;
+  color: #676E7A;
+  font-size: 2.4rem;
 }
 @media (max-width: 800px) {
   header nav a {
     font-size: 1.872rem;
   }
 }
+header nav a:hover {
+  text-decoration: underline;
+}
 footer {
-  border-top: 1px solid black;
+  background-color: #666f7c;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -217,6 +237,7 @@ footer {
 }
 footer nav {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   margin: 5% 0;
   width: 20%;
@@ -233,12 +254,19 @@ footer nav {
   }
 }
 footer nav a {
-  color: black;
+  color: white;
+  font-size: 2.4rem;
 }
 @media (max-width: 800px) {
   footer nav a {
     font-size: 1.872rem;
   }
+}
+footer nav a:hover {
+  text-decoration: underline;
+}
+footer p {
+  color: white;
 }
 .main-section {
   background-image: url("../img/community.jpg");
@@ -250,10 +278,11 @@ footer nav a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
-  font-weight: bold;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 150, 0.3);
 }
 .main-section h1 {
+  color: white;
+  font-size: 4rem;
   margin: 1% 0;
 }
 @media (max-width: 800px) {
@@ -264,10 +293,14 @@ footer nav a {
 }
 @media (max-width: 500px) {
   .main-section h1 {
+    padding: 0 5%;
     margin: 3% 0;
+    text-align: center;
   }
 }
 .main-section h2 {
+  color: white;
+  font-size: 3.2rem;
   margin: 1% 0;
 }
 @media (max-width: 800px) {
@@ -278,12 +311,17 @@ footer nav a {
 }
 @media (max-width: 500px) {
   .main-section h2 {
+    padding: 0 5%;
     margin: 3% 0;
+    text-align: center;
   }
 }
 .main-section a {
-  background-color: white;
-  color: black;
+  background-color: #00B246;
+  border: 1px solid #00B246;
+  border-radius: 3px;
+  color: white;
+  font-size: 2.4rem;
   margin: 1% 0;
   padding: 1% 3%;
 }
@@ -300,8 +338,14 @@ footer nav a {
     margin: 3% 0;
   }
 }
+.main-section a:hover {
+  background-color: #00932A;
+  color: white;
+}
 .failure-section {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   padding: 5%;
 }
 @media (max-width: 800px) {
@@ -311,6 +355,7 @@ footer nav a {
 }
 @media (max-width: 500px) {
   .failure-section {
+    display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10% 2.5%;
@@ -321,7 +366,7 @@ footer nav a {
   flex-direction: column;
   justify-content: center;
   margin: 0 1.25%;
-  width: 50%;
+  width: 40%;
 }
 @media (max-width: 500px) {
   .failure-section .failure-img {
@@ -329,6 +374,9 @@ footer nav a {
   }
 }
 .failure-section .failure-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 0 1.25%;
   width: 50%;
 }
@@ -338,6 +386,8 @@ footer nav a {
   }
 }
 .failure-section .failure-content h3 {
+  color: #676E7A;
+  font-size: 2.4rem;
   padding: 2.5% 3.75%;
 }
 @media (max-width: 800px) {
@@ -353,6 +403,8 @@ footer nav a {
   }
 }
 .failure-section .failure-content p {
+  color: #676E7A;
+  font-size: 1.872rem;
   padding: 2.5% 3.75%;
 }
 @media (max-width: 500px) {
@@ -363,6 +415,8 @@ footer nav a {
 .success-section {
   background-color: #f9f9fa;
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   padding: 5%;
 }
 @media (max-width: 800px) {
@@ -372,6 +426,7 @@ footer nav a {
 }
 @media (max-width: 500px) {
   .success-section {
+    display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10% 2.5%;
@@ -383,7 +438,7 @@ footer nav a {
   justify-content: center;
   order: 2;
   margin: 0 1.25%;
-  width: 50%;
+  width: 40%;
 }
 @media (max-width: 500px) {
   .success-section .success-img {
@@ -391,6 +446,9 @@ footer nav a {
   }
 }
 .success-section .success-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 0 1.25%;
   width: 50%;
 }
@@ -401,7 +459,9 @@ footer nav a {
   }
 }
 .success-section .success-content h3 {
-  padding: 2.5% 7.5%;
+  color: #676E7A;
+  font-size: 2.4rem;
+  padding: 2.5% 3.75%;
 }
 @media (max-width: 800px) {
   .success-section .success-content h3 {
@@ -416,7 +476,9 @@ footer nav a {
   }
 }
 .success-section .success-content p {
-  padding: 2.5% 7.5%;
+  color: #676E7A;
+  font-size: 1.872rem;
+  padding: 2.5% 3.75%;
 }
 @media (max-width: 500px) {
   .success-section .success-content p {
@@ -425,28 +487,42 @@ footer nav a {
 }
 .how-it-works-section {
   display: flex;
-  padding: 7.5%;
+  flex-direction: row;
+  padding: 5%;
 }
 @media (max-width: 800px) {
   .how-it-works-section {
+    display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 7.5% 15%;
   }
 }
 .how-it-works-section .box {
   display: flex;
   flex-direction: column;
-  margin: 0 5%;
+  margin: 0 4%;
+  width: 30%;
 }
 @media (max-width: 800px) {
   .how-it-works-section .box {
     margin: 5% 0;
+    width: 75%;
+  }
+}
+@media (max-width: 500px) {
+  .how-it-works-section .box {
+    width: 100%;
   }
 }
 .how-it-works-section .box h3,
 .how-it-works-section .box img,
 .how-it-works-section .box p {
   padding: 2.5% 0;
+}
+.how-it-works-section .box h3 {
+  color: #676E7A;
+  font-size: 2.4rem;
 }
 @media (max-width: 800px) {
   .how-it-works-section .box h3 {
@@ -460,27 +536,40 @@ footer nav a {
     text-align: center;
   }
 }
+.how-it-works-section .box p {
+  color: #676E7A;
+  font-size: 1.872rem;
+}
 .sign-up-section {
   background-color: #f9f9fa;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 7.5%;
-  font-weight: bold;
+}
+.sign-up-section h2 {
+  font-size: 3.2rem;
 }
 @media (max-width: 800px) {
   .sign-up-section h2 {
     font-size: 3.2rem;
+    line-height: 1.5;
+    text-align: center;
+    padding: 0 15%;
   }
 }
 @media (max-width: 500px) {
   .sign-up-section h2 {
+    padding: 0 5%;
     margin: 3% 0;
   }
 }
 .sign-up-section a {
-  background-color: black;
+  background-color: #00B246;
+  border: 1px solid #00B246;
+  border-radius: 3px;
   color: white;
+  font-size: 2.4rem;
   padding: 1% 3%;
   margin: 2.5% 0;
 }
@@ -497,6 +586,11 @@ footer nav a {
     margin: 3% 0;
   }
 }
+.sign-up-section a:hover {
+  background-color: #00932A;
+  border: 1px solid #00932A;
+  color: white;
+}
 .intro-section {
   padding: 5% 25%;
 }
@@ -510,9 +604,17 @@ footer nav a {
     padding: 10% 7.5%;
   }
 }
+.intro-section p {
+  color: #676E7A;
+  font-size: 1.872rem;
+}
 .team-section {
   padding: 5% 7.5%;
   text-align: center;
+}
+.team-section h1 {
+  color: #676E7A;
+  font-size: 4rem;
 }
 @media (max-width: 800px) {
   .team-section h1 {
@@ -521,6 +623,7 @@ footer nav a {
 }
 .team-section .team-members {
   display: flex;
+  flex-direction: row;
   margin: 5% 0;
 }
 @media (max-width: 800px) {
@@ -530,6 +633,7 @@ footer nav a {
 }
 @media (max-width: 500px) {
   .team-section .team-members {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
@@ -540,6 +644,8 @@ footer nav a {
   }
 }
 .team-section .team-members h3 {
+  color: #676E7A;
+  font-size: 2.4rem;
   margin: 5% 0;
 }
 @media (max-width: 800px) {
@@ -554,6 +660,8 @@ footer nav a {
 }
 .team-section .team-members img,
 .team-section .team-members p {
+  color: #676E7A;
+  font-size: 1.872rem;
   padding: 10%;
 }
 @media (max-width: 800px) {

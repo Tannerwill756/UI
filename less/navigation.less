@@ -1,25 +1,31 @@
 header {
   border-bottom: 1px solid black;
-  display: flex;
+  .flex-row();
   justify-content: space-between;
-  padding: 2.5% 10%;
+  padding: 2% 10%;
   @media @tablet {
     padding: 5% 10%;
   }
   @media @mobile {
-    flex-direction: column;
+    .flex-column();
     align-items: center;
   }
 
   .logo {
+    width: 10%;
+    @media @tablet {
+      width: 15%;
+    }
     @media @mobile {
+      width: 25%;
       margin: 4% 0;
     }
   }
   nav {
-    display: flex;
+    .flex-row();
     justify-content: space-around;
-    width: 20%;
+    align-items: center;
+    width: 30%;
     @media @tablet {
       width: 30%;
     }
@@ -28,9 +34,13 @@ header {
       width: 50%;
     }
     a {
-      color: black;
+      color: @primary-gray;
+      font-size: @h2-size;
       @media @tablet {
         font-size: @h3-size;
+      }
+      &:hover {
+        text-decoration: underline;
       }
     }
   }

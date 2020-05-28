@@ -6,6 +6,11 @@
   @media @mobile {
     padding: 10% 7.5%;
   }
+
+  p {
+    color: @primary-gray;
+    font-size: @h3-size;
+  }
 }
 
 .team-section {
@@ -13,19 +18,21 @@
   text-align: center;
 
   h1 {
+    color: @primary-gray;
+    font-size: @biggest-size;
     @media @tablet {
       font-size: @biggest-size;
     }
   }
 
   .team-members {
-    display: flex;
+    .flex-row();
     margin: 5% 0;
     @media @tablet {
       margin: 7.5% 0;
     }
     @media @mobile {
-      flex-direction: column;
+      .flex-column();
       align-items: center;
     }
 
@@ -36,6 +43,8 @@
     }
 
     h3 {
+      color: @primary-gray;
+      font-size: @h2-size;
       margin: 5% 0;
       @media @tablet {
         font-size: @h2-size;
@@ -47,6 +56,8 @@
 
     img,
     p {
+      color: @primary-gray;
+      font-size: @h3-size;
       padding: 10%;
       @media @tablet {
         padding: 7.5% 5%;
