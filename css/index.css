@@ -289,6 +289,7 @@ footer p {
   .main-section h1 {
     font-size: 4rem;
     margin: 1.5% 0;
+    text-align: center;
   }
 }
 @media (max-width: 500px) {
