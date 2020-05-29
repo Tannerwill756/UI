@@ -306,7 +306,9 @@ footer p {
 @media (max-width: 800px) {
   .main-section h2 {
     font-size: 3.2rem;
+    padding: 0 20%;
     margin: 1.5% 0;
+    text-align: center;
   }
 }
 @media (max-width: 500px) {
@@ -555,13 +557,13 @@ footer p {
   .sign-up-section h2 {
     font-size: 3.2rem;
     line-height: 1.5;
-    text-align: center;
     padding: 0 15%;
+    text-align: center;
   }
 }
 @media (max-width: 500px) {
   .sign-up-section h2 {
-    padding: 0 5%;
+    padding: 0 2%;
     margin: 3% 0;
   }
 }
